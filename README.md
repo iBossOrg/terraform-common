@@ -2,8 +2,9 @@
 
 ## Terraform modules
 
-* [provisioning-phase](provisioning-phase/README.md) - A helper module that
-  simplifies infrastructure provisioning in multiple phases (or steps).
+* [dependencies](dependencies/README.md) - A helper module that simplifies
+  infrastructure provisioning in multiple phases (or steps) and workaround to
+  Terraform limitation where there is no module `depends_on` attribute.
 
 ## Reporting Issues
 
