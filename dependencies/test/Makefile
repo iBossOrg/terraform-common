@@ -1,16 +1,16 @@
 init: tf-init
 
-plan: tf-plan
+plan: init tf-plan
 
-apply: tf-apply
+apply: init tf-apply
 
-output: tf-output
+output: init tf-output
 
 destroy: tf-destroy tf-forget
 
 forget: tf-forget
 
-clean: tf-clean
+clean: tf-clean forget
 
 MK_DIR  ?= $(CURDIR)/../../../Mk
 include $(MK_DIR)/terraform.mk

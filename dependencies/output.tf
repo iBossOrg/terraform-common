@@ -1,4 +1,4 @@
-output "id" {
-  description = "Dependencies id"
-  value       = null_resource.dependencies.id
+output "dependencies" {
+  description = "Dependencies"
+  value       = jsondecode(data.null_data_source.dependencies.outputs.dependencies)
 }

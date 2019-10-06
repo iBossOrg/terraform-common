@@ -1,5 +1,5 @@
-resource "null_resource" "dependencies" {
-  triggers = {
-    dependencies = join(",", var.dependencies)
+data "null_data_source" "dependencies" {
+  inputs = {
+    dependencies = jsonencode(var.dependencies)
   }
 }
